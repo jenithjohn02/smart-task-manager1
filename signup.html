@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Signup</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="login-body">
+
+<div class="login-card">
+
+<h2>Create Account</h2>
+
+<form id="signupForm">
+
+<input type="text" id="name" placeholder="First Name" required>
+
+<input type="text" id="lastname" placeholder="Last Name" required>
+
+<input type="email" id="email" placeholder="Email" required>
+
+<input type="date" id="dob" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" title="Please enter exactly 10 digits" required>
+
+<input type="password" id="password" placeholder="Password" required>
+
+<input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+<button type="submit">Signup</button>
+
+</form>
+
+<a href="index.html">Back to Login</a>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

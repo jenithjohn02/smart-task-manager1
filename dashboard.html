@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<title>User Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h2>User Dashboard</h2>
+
+<div class="menu">
+
+<button onclick="showAll()">Home</button>
+<button onclick="showPending()">Pending</button>
+<button onclick="showCompleted()">Completed</button>
+
+</div>
+
+<button id="refreshBtn" type="button">Refresh</button>
+<button onclick="logout()">Logout</button>
+
+</header>
+
+
+<section class="container">
+
+<div class="profile"><span id="profileName"></span></div>
+
+<h3>Add Task</h3>
+<div class="task-inputs">
+  <input type="text" id="newTaskText" placeholder="New task">
+  <select id="newTaskPriority">
+    <option value="High">High</option>
+    <option value="Medium" selected>Medium</option>
+    <option value="Low">Low</option>
+  </select>
+  <button id="addTaskBtn">Add Task</button>
+</div>
+
+<h3>Your Tasks</h3>
+
+<ul id="taskList"></ul>
+
+</section>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

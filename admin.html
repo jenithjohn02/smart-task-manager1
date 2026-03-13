@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Admin Panel</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<h2>Admin Dashboard</h2>
+
+<button id="refreshBtn" type="button">Refresh</button>
+<button onclick="logout()">Logout</button>
+
+</header>
+
+<section class="container">
+
+<h3>Assign Task</h3>
+
+<select id="userSelect"></select>
+
+<input type="text" id="taskInput" placeholder="Task">
+
+<select id="priority">
+<option>High</option>
+<option>Medium</option>
+<option>Low</option>
+</select>
+
+<button id="assignTaskBtn" type="button">Assign Task</button>
+
+<div class="filter-buttons">
+  <button id="filterAll" class="active" type="button">All</button>
+  <button id="filterPending" type="button">Pending</button>
+  <button id="filterCompleted" type="button">Completed</button>
+</div>
+
+<h3>All Tasks</h3>
+
+<ul id="taskList"></ul>
+
+</section>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>
